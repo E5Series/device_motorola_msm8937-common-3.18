@@ -75,6 +75,10 @@ function blob_fixup() {
                 "${PATCHELF}" --add-needed "libcutils_shim.so" "${LIBCUTILS_SHIM}"
             done
             ;;
+
+        vendor/lib/libjustshoot.so)
+            patchelf --add-needed libjustshoot_shim.so "${2}"
+            ;;
     esac
 }
 
