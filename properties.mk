@@ -220,6 +220,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sensors.cmc=false \
     ro.vendor.sensors.pedometer=false
 
+# Smoothens UI
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.service.lgospd.enable=0 \
+    persist.service.pcsync.enable=0
+
 # SoC
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.soc.manufacturer=Qualcomm \
