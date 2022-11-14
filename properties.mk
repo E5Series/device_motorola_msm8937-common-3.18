@@ -152,6 +152,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.device_config.runtime_native_boot.iorap_readahead_enable=true
 
+# Play store
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.com.google.clientidbase.am=android-motorola \
+    ro.com.google.clientidbase.gmm=android-motorola \
+    ro.com.google.clientidbase.ms=android-motorola \
+    ro.com.google.clientidbase.yt=android-motorola
+
 # QTI
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.va_aosp.support=1
