@@ -120,6 +120,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.avoid_gfx_accel=true \
     ro.vendor.qti.am.reschedule_service=true \
     debug.hwui.renderer=skiagl \
+    debug.cpurend.vsync=false \
     renderthread.skia.reduceopstasksplitting=true \ 
     debug.renderengine.backend=skiaglthreaded
 
