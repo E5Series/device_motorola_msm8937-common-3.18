@@ -116,7 +116,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.disable_skip_validate=1 \
     vendor.display.perf_hint_window=50 \
     vendor.gralloc.enable_fb_ubwc=1 \
-    debug.egl.force_msaa=1
+    debug.egl.force_msaa=1 \
+    debug.hwui.renderer=skiagl \
+    renderthread.skia.reduceopstasksplitting=true \ 
+    debug.renderengine.backend=skiaglthreaded
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
