@@ -132,7 +132,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.hwui.use_buffer_age=false \
     debug.cpurend.vsync=false \
     renderthread.skia.reduceopstasksplitting=true \ 
-    debug.renderengine.backend=skiaglthreaded
+    debug.renderengine.backend=skiaglthreaded \
+    vendor.display.use_smooth_motion=1 
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
