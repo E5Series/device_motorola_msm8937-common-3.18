@@ -11,8 +11,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.iorapd.enable=false \
     iorapd.perfetto.enable=false \
-    iorapd.readahead.enable=false \
-    persist.device_config.runtime_native_boot.iorap_readahead_enable=false
+    iorapd.readahead.enable=false
 
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -138,9 +137,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.hwui.renderer=skiagl \
     debug.hwui.use_buffer_age=false \
     debug.cpurend.vsync=false \
-    renderthread.skia.reduceopstasksplitting=true \ 
+    renderthread.skia.reduceopstasksplitting=true \
     debug.renderengine.backend=skiaglthreaded \
-    vendor.display.use_smooth_motion=1 
+    vendor.display.use_smooth_motion=1
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
@@ -235,7 +234,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ril.subscription.types=NV,RUIM \
-    telephony.lteOnCdmaDevice=1 \
+    telephony.lteOnCdmaDevice=1
 
 # Sensors
 PRODUCT_PROPERTY_OVERRIDES += \
